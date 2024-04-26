@@ -27,6 +27,7 @@ h2 {
   padding: 20px;
   margin-left: 10px;
   text-align: center;
+  font-family: Georgia, sans-serif;
 }
 
 ul,
@@ -92,6 +93,11 @@ li {
   background-color: rgb(241, 180, 65);
   border: 5px solid rgb(247, 246, 246);
   margin-bottom: 20px;
+}
+
+.para p {
+  font-style: bold;
+  color: white;
 }
 
 .gallery {
