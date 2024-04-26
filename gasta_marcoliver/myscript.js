@@ -5,7 +5,6 @@ document.addEventListener("DOMContentLoaded", function () {
     const submitButton = document.getElementById("submitButton");
 
     const checkFormFilled = () => {
-        // If both name and comment fields have values, enable the submit button
         const isFormFilled = nameInput.value.trim() && commentInput.value.trim();
         submitButton.disabled = !isFormFilled;
         if (isFormFilled) {
@@ -15,7 +14,6 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     };
 
-    // Add event listeners to input fields to check for changes
     nameInput.addEventListener("input", checkFormFilled);
     commentInput.addEventListener("input", checkFormFilled);
 
