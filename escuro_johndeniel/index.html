@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link href="style.css" rel="stylesheet" />
+	<script src="script.js"></script>
     <title>Escuro_JohnDeniel Page</title>
   </head>
   <body>
@@ -157,7 +158,9 @@
             id="comment"
             name="comment"
             required
-            placeholder="Enter your Comment"></textarea>
+            placeholder="Enter your Comment"
+			required
+			oninput="validateInput()"></textarea>
         </div>
         <button type="submit" id="submit-btn" disabled>Comment</button>
       </form>
