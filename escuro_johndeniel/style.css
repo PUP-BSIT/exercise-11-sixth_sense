@@ -9,30 +9,57 @@ body {
   display: flex;
   justify-content: center;
   flex-direction: row;
-  margin: 48px auto 0;
+  margin: 70px auto 0;
   flex-wrap: wrap;
-  gap: 60px;
+  gap: 70px;
+  margin-bottom: 75px;
 }
 
 h1,
 h2 {
   background-color: rgb(170, 227, 227);
-  border-radius: 20px;
+  border-radius: 23px;
   box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
   padding: 25px;
   text-align: center;
   width: 350px;
   max-width: 90%;
   word-wrap: break-word;
+  margin-bottom: 30px;
 }
 
 h1 {
   font-size: 24px;
-  margin: 32px auto;
+  margin: 40px auto;
 }
 
 h2 {
   font-size: 19px;
+}
+
+li {
+  margin-bottom: 10px;
+}
+
+ul,
+li {
+  text-decoration: none;
+  list-style: none;
+}
+
+.testimonials-text {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.testimonials-list {
+  display: flex;
+  justify-content: center;
+  width: 50%;
+  margin: 0 auto;
+  margin-bottom: 50x;
 }
 
 .gallery {
@@ -47,6 +74,7 @@ h2 {
   display: flex;
   justify-content: center;
   width: 100%;
+  margin-bottom: 50px;
 }
 
 .gallery img {
@@ -57,74 +85,84 @@ h2 {
   box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
 }
 
-form.container {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  align-items: center;
-  margin: 48px auto 0;
-  width: 90%;
-  max-width: 900px;
-  gap: 40px;
+.form-container {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.form {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 30px;
 }
 
 .upper {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
-  grid-gap: 25px;
-  width: 100%;
+  gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
 }
 
-.upper > div {
+.upper div {
   display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  align-items: center;
-  gap: 12px;
+  flex-direction: column;
 }
 
-.upper label {
-  text-align: right;
-  width: 100px;
+.label {
+  font-weight: bold;
+  margin-bottom: 5px;
 }
 
-.upper input {
+input[type="email"],
+input[type="text"],
+input[type="number"],
+textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+  margin-bottom: 15px;
   width: 100%;
-  max-width: 350px;
+  transition: border-color 0.3s ease;
 }
 
-.checkbox-container,
-.message-container,
-.submit-container {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  gap: 12px;
-}
-
-.checkbox-container label {
-  text-align: right;
-  width: 100px;
+input[type="email"]:focus,
+input[type="text"]:focus,
+input[type="number"]:focus,
+textarea:focus {
+  outline: none;
+  border-color: #ff7e5f;
 }
 
 .message-container textarea {
-  width: 100%;
-  max-width: 700px;
+  margin-top: 30px;
+  resize: vertical;
 }
 
-/* Media Query for Mobile */
+.checkbox-container {
+  display: flex;
+  align-items: center;
+}
+
+.submit-container input[type="submit"] {
+  padding: 12px 24px;
+  background-color: #ff7e5f;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.submit-container input[type="submit"]:hover {
+  background-color: #ff5e40;
+}
+
 @media (max-width: 425px) {
   .container {
     flex-direction: column;
     margin: 32px auto 0;
     align-items: center;
-  }
-
-  h1,
-  h2 {
-    width: 90%;
-    max-width: 350px;
   }
 
   h1 {
@@ -162,4 +200,45 @@ form.container {
     text-align: left;
     width: auto;
   }
+}
+
+.comment-form {
+  width: 90%;
+  max-width: 450px;
+  margin: 32px auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.comment-form h3 {
+  font-size: 21px;
+  margin-bottom: 24px;
+  text-align: center;
+}
+
+.comment-form form {
+  width: 100%;
+}
+
+.comment-form label {
+  text-align: left;
+  margin-bottom: 8px;
+  width: 100%;
+}
+
+.comment-form input[type="text"],
+.comment-form textarea {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 16px;
+}
+
+.comment-form button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
 }
