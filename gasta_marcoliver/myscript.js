@@ -1,11 +1,11 @@
 document.addEventListener("DOMContentLoaded", function () {
-    const form = document.getElementById("commentForm");
-    const nameInput = document.getElementById("name");
-    const commentInput = document.getElementById("comment");
-    const submitButton = document.getElementById("submitButton");
+    let form = document.getElementById("commentForm");
+    let nameInput = document.getElementById("name");
+    let commentInput = document.getElementById("comment");
+    let submitButton = document.getElementById("submitButton");
 
-    const checkFormFilled = () => {
-        const isFormFilled = nameInput.value.trim() && commentInput.value.trim();
+    let checkFormFilled = () => {
+        let isFormFilled = nameInput.value.trim() && commentInput.value.trim();
         submitButton.disabled = !isFormFilled;
         if (isFormFilled) {
             submitButton.style.cursor = "pointer";
