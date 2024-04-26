@@ -219,6 +219,10 @@ input[type="submit"]:hover {
   padding: 2rem;
 }
 
+.goals h2 {
+  width: 100%;
+}
+
 .goal {
   background-color: #01b0d3;
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
