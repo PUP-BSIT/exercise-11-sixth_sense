@@ -26,75 +26,125 @@
       <div>
         <h2>My Works</h2>
         <ol>
-          <li><a href="work1.html">work1</a></li>
-          <li><a href="work1.html">work2</a></li>
-          <li><a href="work1.html">work3</a></li>
-          <li><a href="work1.html">work4</a></li>
-          <li><a href="work1.html">work5</a></li>
+          <li><a href="#">work1</a></li>
+          <li><a href="#">work2</a></li>
+          <li><a href="#">work3</a></li>
+          <li><a href="#">work4</a></li>
+          <li><a href="#">work5</a></li>
         </ol>
       </div>
 
       <div>
-        <h2>Testimonials</h2>
-        <p>Your website looks cool! -Gasta</p>
-        <p>Hi Deniel, I like your website! -Trinidad</p>
-        <p>Nice work! -Rosario</p>
-        <p>Clean and Neat! -Armedilla</p>
-        <p>Really love the aesthetic of it! - Ilagan</p>
-      </div>
-
-      <div>
-        <div class="gallery-text">
-          <h2>Gallery</h2>
-        </div>
-        <div class="gallery">
-          <img src="images/bloonstd6.jpg" />
-          <img src="images/gaming.webp" />
-          <img src="images/aogoshima.jpg" />
-          <img src="images/Graduation.jpg" />
-          <img src="images/tyler.jpg" />
-          <img src="images/kanye.jpg" />
-        </div>
+        <h2>My Goals</h2>
+        <ol>
+          <li>Master front-end technologies</li>
+          <li>Learn back-end development</li>
+          <li>Build and deploy full-stack web applications</li>
+          <li>Implement data structures and algorithms</li>
+          <li>Contribute to open source projects</li>
+        </ol>
       </div>
     </div>
 
     <div>
+      <div class="testimonials-text">
+        <h2>Testimonials</h2>
+      </div>
+      <div class="testimonials-list">
+        <ol>
+          <li>Your website looks cool! -Gasta</li>
+          <li>Hi Deniel, I like your website! -Trinidad</li>
+          <li>Nice work! -Rosario</li>
+          <li>Clean and Neat! -Armedilla</li>
+          <li>Really love the aesthetic of it! - Ilagan</li>
+        </ol>
+      </div>
+    </div>
+
+    <div>
+      <div class="gallery-text">
+        <h2>Gallery</h2>
+      </div>
+      <div class="gallery">
+        <img src="./images/bloonstd6.jpg" alt="bloonstd6" />
+        <img src="./images/gaming.webp" alt="gaming" />
+        <img src="./images/aogoshima.jpg" alt="aogoshima" />
+        <img src="./images/Graduation.jpg" alt="graduation" />
+        <img src="./images/tyler.jpg" alt="tyler" />
+        <img src="./images/kanye.jpg" alt="kanye" />
+      </div>
+    </div>
+
+    <div class="form-container">
       <form class="container">
+        <h2>Contact Me</h2>
         <div class="upper">
           <div>
             <label for="email">Email</label>
-            <input type="email" name="email" />
+            <input type="email" name="email" placeholder="Enter your Email" />
           </div>
-
           <div>
-            <label for="fullname">Fullname</label>
-            <input type="text" name="fullname" />
+            <label for="fullname">Full Name</label>
+            <input type="text" name="fullname" placeholder="Enter your Name" />
           </div>
-
           <div>
             <label for="age">Age</label>
-            <input type="number" name="age" />
+            <input type="number" name="age" placeholder="Enter your Age" />
           </div>
-
           <div>
             <label for="subject">Subject</label>
-            <input type="text" name="subject" />
+            <input
+              type="text"
+              name="subject"
+              placeholder="Enter your Subject"
+            />
           </div>
-        </div>
-
-        <div class="checkbox-container">
-          <label for="sendme">Send me a copy</label>
-          <input type="checkbox" name="sendme" />
         </div>
 
         <div class="message-container">
           <label for="message">Message</label>
-          <textarea name="message" cols="30" rows="10"></textarea>
+          <textarea
+            name="message"
+            cols="30"
+            rows="15"
+            placeholder="Enter your Message"
+          ></textarea>
+        </div>
+
+        <div class="checkbox-container">
+          <input type="checkbox" name="sendme" />
+          <label for="sendme">Send me a copy</label>
         </div>
 
         <div class="submit-container">
-          <input type="submit" />
+          <input type="submit" value="Submit" />
         </div>
+      </form>
+    </div>
+
+    <div class="comment-form">
+      <h3>Leave a Comment</h3>
+      <form>
+        <div>
+          <label for="name">Name</label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            required
+            placeholder="Enter your Name"
+          />
+        </div>
+        <div>
+          <label for="comment">Comment</label>
+          <textarea
+            id="comment"
+            name="comment"
+            required
+            placeholder="Enter your Comment"
+          ></textarea>
+        </div>
+        <button type="submit" id="submit-btn" disabled>Comment</button>
       </form>
     </div>
   </body>
