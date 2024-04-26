@@ -1,40 +1,58 @@
-#header {
-  background-color: rgb(2, 0, 65);
-  color: white;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Gill Sans", sans-serif;
+  background-color: #f2f2f2;
+}
+
+.header {
+  background-color: #124E66;
+  color: #fff;
   text-align: center;
   padding: 20px 0;
-  width: 100%;
 }
 
 .container {
   display: flex;
-  justify-content: center;
-  gap: 100px;
-  margin: 5rem auto 0 auto;
+  justify-content: space-between;
+  margin: 3rem auto;
+  flex-wrap: wrap;
   text-align: center;
 }
 
-.title {
-  text-align: center;
-  justify-content: center;
+.member {
+  flex: 1;
+  margin: 10px;
+  background-color: #748D92;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  color: #fff;
+  width: 80%;
 }
 
-.h2 {
-  text-align: center;
-  color: rgb(255, 255, 240);
-  background-color: rgb(2, 0, 65);
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
-  border-radius: 20px;
-  padding: 60px 60px;
-  width: 250px;
-  box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.2);
+.member-links {
+  list-style-type: none;
+  padding: 0;
 }
 
-.c-link {
-  color: rgb(255, 255, 240);
+.member-links a {
   text-decoration: none;
+  color: #fff;
 }
 
-.c-link:hover {
-  color: aqua;
+.member-links a:hover {
+  color: #124E66;
+}
+
+@media (max-width: 767px) {
+  .container {
+    flex-direction: column;
+    align-items: center;
+  }
 }
