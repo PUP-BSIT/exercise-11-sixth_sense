@@ -97,9 +97,9 @@ li {
 
 .para p {
   font-style: bold;
+  font-size: large;
   color: white;
   text-align: center;
-  border: 5px solid rgb(247, 246, 246);
   margin-bottom: 20px;
 }
 
