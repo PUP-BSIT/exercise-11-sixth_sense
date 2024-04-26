@@ -193,6 +193,7 @@ input[type="submit"]:hover {
 }
 
 .comment-form {
+  background-color: orange;
   width: 90%;
   max-width: 450px;
   margin: 32px auto;
