@@ -47,6 +47,7 @@ li {
   list-style: none;
 }
 
+.contact-text,
 .testimonials-text {
   text-align: center;
   display: flex;
@@ -54,6 +55,14 @@ li {
   width: 100%;
 }
 
+.comment-text {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  margin-bottom: 50px;
+}
+
+.comment,
 .testimonials-list {
   display: flex;
   justify-content: center;
@@ -83,11 +92,31 @@ li {
   object-fit: cover;
   border-radius: 20px;
   box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
+  margin-bottom: 75px;
+}
+
+.classes-text {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.classes-list {
+  display: flex;
+  justify-content: center;
+  width: 45%;
+  margin: 0 auto;
+  margin-bottom: 80px;
 }
 
 .form-container {
   max-width: 600px;
   margin: 0 auto;
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  border-radius: 20px;
+  margin-bottom: 100px;
 }
 
 .form {
@@ -99,8 +128,10 @@ li {
 
 .upper {
   display: grid;
-  gap: 20px;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-gap: 25px;
+  width: 100%;
 }
 
 .upper div {
@@ -146,60 +177,18 @@ textarea:focus {
 
 .submit-container input[type="submit"] {
   padding: 12px 24px;
-  background-color: #ff7e5f;
+  background-color: #86aab7;
   color: #fff;
   border: none;
   border-radius: 5px;
   cursor: pointer;
   transition: background-color 0.3s ease;
+  margin-bottom: 20px;
+  margin-top: 20px;
 }
 
 .submit-container input[type="submit"]:hover {
-  background-color: #ff5e40;
-}
-
-@media (max-width: 425px) {
-  .container {
-    flex-direction: column;
-    margin: 32px auto 0;
-    align-items: center;
-  }
-
-  h1 {
-    font-size: 21px;
-    margin: 24px auto;
-  }
-
-  h2 {
-    font-size: 16px;
-  }
-
-  .gallery img {
-    width: 180px;
-    height: 180px;
-  }
-
-  .upper {
-    display: flex;
-    flex-direction: column;
-    width: 90%;
-    max-width: 450px;
-  }
-
-  .upper > div {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-  .upper label {
-    text-align: left;
-    width: auto;
-  }
-
-  .checkbox-container label {
-    text-align: left;
-    width: auto;
-  }
+  background-color: #476a77;
 }
 
 .comment-form {
@@ -209,6 +198,10 @@ textarea:focus {
   display: flex;
   flex-direction: column;
   align-items: center;
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  border-radius: 20px;
+  margin-bottom: 50px;
 }
 
 .comment-form h3 {
@@ -236,9 +229,74 @@ textarea:focus {
 
 .comment-form button {
   padding: 10px 20px;
-  background-color: #007bff;
+  background-color: #86aab7;
   color: white;
   border: none;
   border-radius: 5px;
   cursor: pointer;
+  margin-bottom: 50px;
+}
+
+@media (max-width: 425px) {
+  .container {
+    flex-direction: column;
+    margin: 32px auto 0;
+    align-items: center;
+  }
+
+  h1 {
+    font-size: 21px;
+    margin: 24px auto;
+  }
+
+  h2 {
+    font-size: 16px;
+  }
+
+  .gallery img {
+    width: 180px;
+    height: 180px;
+  }
+
+  .upper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 85%;
+    max-width: 424px;
+    margin: 0 auto;
+  }
+
+  .upper > div {
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 0 auto;
+  }
+
+  .upper label {
+    text-align: left;
+    width: auto;
+  }
+
+  .form-container {
+    max-width: 380px;
+    margin: 0 auto;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    border-radius: 20px;
+    margin-bottom: 100px;
+  }
+
+  .checkbox-container label {
+    text-align: left;
+    margin: 0 auto;
+    display: flex;
+    width: 100%;
+  }
+
+  .comment-form {
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    border-radius: 20x;
+  }
 }
