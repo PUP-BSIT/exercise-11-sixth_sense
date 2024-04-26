@@ -1,0 +1,95 @@
+.container {
+    margin: 0 auto;
+    max-width: 800px;
+    padding: 20px;
+}
+
+#header {
+    background-color: #ff7e5f; 
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    box-shadow: 4px 5px 15px black;
+}
+
+#interest-hobbies, #myworks, #testimonials {
+    background-color: #ffac81; 
+    color: white;
+    padding: 10px;
+    margin-bottom: 20px;
+    text-align: center;
+    border-radius: 20px;
+    box-shadow: 4px 5px 15px black;
+}
+
+.title {
+    background-color: #ffac81;
+    color: white;
+    text-align: center;
+    box-shadow: 4px 5px 15px black;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffac81;
+    box-sizing: border-box;
+    width: auto;
+    margin: 1rem;
+    box-shadow: 4px 5px 15px black;
+}
+
+.ange {
+    width: calc(33.33% - 20px); /* Set width for each image container */
+    margin: 10px;
+    text-align: center;
+}
+
+.ange img {
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+    box-shadow: 4px 5px 15px black;
+}
+
+div {
+    border: 1px solid #ffac81;
+}
+
+
+@media (max-width: 426px) {
+    .message-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .submit-container {
+        display: flex;
+        justify-content: center;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media (min-width: 426px) {
+    .upper {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+    }
+
+    .message-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .submit-container {
+        display: flex;
+        justify-content: center;
+    }
+}

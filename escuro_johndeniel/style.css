@@ -1,0 +1,165 @@
+body {
+  background-color: antiquewhite;
+  margin: 0;
+  padding: 0;
+  font-family: Helvetica, sans-serif;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  margin: 48px auto 0;
+  flex-wrap: wrap;
+  gap: 60px;
+}
+
+h1,
+h2 {
+  background-color: rgb(170, 227, 227);
+  border-radius: 20px;
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
+  padding: 25px;
+  text-align: center;
+  width: 350px;
+  max-width: 90%;
+  word-wrap: break-word;
+}
+
+h1 {
+  font-size: 24px;
+  margin: 32px auto;
+}
+
+h2 {
+  font-size: 19px;
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.gallery-text {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.gallery img {
+  width: 240px;
+  height: 240px;
+  object-fit: cover;
+  border-radius: 20px;
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
+}
+
+form.container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin: 48px auto 0;
+  width: 90%;
+  max-width: 900px;
+  gap: 40px;
+}
+
+.upper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-gap: 25px;
+  width: 100%;
+}
+
+.upper > div {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 12px;
+}
+
+.upper label {
+  text-align: right;
+  width: 100px;
+}
+
+.upper input {
+  width: 100%;
+  max-width: 350px;
+}
+
+.checkbox-container,
+.message-container,
+.submit-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 12px;
+}
+
+.checkbox-container label {
+  text-align: right;
+  width: 100px;
+}
+
+.message-container textarea {
+  width: 100%;
+  max-width: 700px;
+}
+
+/* Media Query for Mobile */
+@media (max-width: 425px) {
+  .container {
+    flex-direction: column;
+    margin: 32px auto 0;
+    align-items: center;
+  }
+
+  h1,
+  h2 {
+    width: 90%;
+    max-width: 350px;
+  }
+
+  h1 {
+    font-size: 21px;
+    margin: 24px auto;
+  }
+
+  h2 {
+    font-size: 16px;
+  }
+
+  .gallery img {
+    width: 180px;
+    height: 180px;
+  }
+
+  .upper {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    max-width: 450px;
+  }
+
+  .upper > div {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .upper label {
+    text-align: left;
+    width: auto;
+  }
+
+  .checkbox-container label {
+    text-align: left;
+    width: auto;
+  }
+}

@@ -1,0 +1,115 @@
+
+body {
+    background-color: lightpink;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 800px;
+    padding: 20px;
+    background-color: lightseagreen;
+}
+
+#header {
+    background-color: lightgreen; 
+    color: black;
+    text-align: center;
+    padding: 20px 0;
+    box-shadow: 4px 5px 15px brown;
+}
+
+#interest_hobbies, #works, #testimonials {
+    background-color: lightskyblue; 
+    color: black;
+    padding: 30px;
+    margin-bottom: 20px;
+    text-align: center;
+    box-shadow: 4px 5px 15px black;
+}
+
+.title {
+    background-color: lightgreen;
+    color: black;
+    text-align: center;
+    box-shadow: 4px 5px 15px brown;
+}
+
+.gallery img {
+    width: 100px;
+    height: 100px;
+}
+
+.sam {
+    width: calc(33.33% - 20px); 
+    margin: 10px;
+    text-align: center;
+
+}
+
+.gallery {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap; 
+    justify-content: center;
+    align-items: center; 
+    text-align: center;
+    margin: 1rem;
+    background-color: rgb(255, 213, 219);
+    box-sizing: border-box;
+    width: auto;
+    box-shadow: 4px 5px 15px brown;
+}
+
+.sam img {
+    width: 100px;
+    height: auto;
+    object-fit: 20px;
+    box-shadow: 4px 5px 15px brown;
+} 
+
+.side {
+    border: 1px solid rgb(12, 167, 89);
+}
+
+@media (max-width: 426px) {
+
+    .message-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .submit-container {
+        display: flex;
+        justify-content: center;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media (min-width: 426px) {
+    .upper {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+    }
+
+    .message-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .submit-container {
+        display: flex;
+        justify-content: center;
+        margin: auto;
+    }
+
+    .myDiv{
+        display: block;
+                    margin: auto;
+        }
+}
+
