@@ -51,6 +51,14 @@ a {
   color: white;
 }
 
+.goal {
+  text-align: center;
+  background-color: rgb(241, 180, 65);
+  border: 5px solid rgb(247, 246, 246);
+  margin-bottom: 20px;
+}
+
+
 li {
   color: white;
   font-weight: bold;
