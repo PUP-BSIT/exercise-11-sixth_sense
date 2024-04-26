@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="trinidad_style.css" rel="stylesheet" />
+    <title>Trinidad, Kian Lee</title>
+  </head>
+  <body>
+    <header>
+      <h1>Trinidad, Kian Lee</h1>
+    </header>
+
+    <div class="interests">
+      <h2>My Interests and Hobbies</h2>
+      <ul class="interests-list">
+        <li class="interest">Watching movies</li>
+        <li class="interest">Playing games</li>
+        <li class="interest">Horror documentaries</li>
+        <li class="interest">Watching tutorial videos</li>
+      </ul>
+    </div>
+
+    <div class="works">
+      <h2>My Works</h2>
+      <ol class="works-list">
+        <li class="work"><a href="#">Flames game c++</a></li>
+        <li class="work"><a href="#">My chemical romance</a></li>
+        <li class="work"><a href="#">CRUD Forms php</a></li>
+        <li class="work"><a href="#">Diary about myself</a></li>
+      </ol>
+    </div>
+
+    <div class="testimonials">
+      <h2>Testimonials</h2>
+      <div class="testimonial-list">
+        <p>Love your work here man! - Gasta</p>
+        <p>Nice work! - Armedilla</p>
+        <p>Excellent job! - Rosario</p>
+        <p>Nice design bro love the minimalist types! - Escuro</p>
+        <p>It's cool, really love what you did! - Ilagan</p>
+      </div>
+    </div>
+
+    <div class="gallery">
+      <h2>Gallery</h2>
+      <div class="image-container">
+        <div class="image-box">
+          <img src="./images/4.jpg" alt="Image 1" />
+        </div>
+        <div class="image-box">
+          <img src="./images/5.jpg" alt="Image 2" />
+        </div>
+        <div class="image-box">
+          <img src="./images/3.jpg" alt="Image 3" />
+        </div>
+        <div class="image-box">
+          <img src="./images/8.jpg" alt="Image 4" />
+        </div>
+        <div class="image-box">
+          <img src="./images/9.jpg" alt="Image 5" />
+        </div>
+        <div class="image-box">
+          <img src="./images/10.jpg" alt="Image 6" />
+        </div>
+      </div>
+    </div>
+
+    <div class="class-session">
+      <h2>FACE-TO-FACE</h2>
+      <p>
+        I like the class to be face-to-face because I can focus more on the
+        topics and understand them. If it's online class I get distracted
+        quickly especially when someone passes by or if there's loud music
+        coming from the neighbour.
+      </p>
+    </div>
+
+    <div class="contact">
+      <h2>Contact Me</h2>
+      <div class="form-container">
+        <form class="container" action="#">
+          <div class="forms">
+            <div>
+              <label for="email">Email</label>
+              <input type="email" name="email" required />
+            </div>
+
+            <div>
+              <label for="fullname">Fullname</label>
+              <input type="text" name="fullname" required />
+            </div>
+
+            <div>
+              <label for="age">Age</label>
+              <input type="number" name="age" required />
+            </div>
+
+            <div>
+              <label for="subject">Subject</label>
+              <input type="text" name="subject" required />
+            </div>
+          </div>
+
+          <div class="message-container">
+            <label for="message">Message</label>
+            <textarea name="message" cols="30" rows="10" required></textarea>
+          </div>
+
+          <div class="checkbox-container">
+            <input type="checkbox" name="sendme" />
+            <label for="sendme">Send me a copy</label>
+          </div>
+
+          <div class="submit-container">
+            <input type="submit" value="Submit" />
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <section class="goals">
+      <h2>My Goals</h2>
+      <div class="goal">
+        <div class="icon"></div>
+        <h3>To pass this semester</h3>
+        <p>
+          All throughout my college journey, this semester is the most
+          challenging of all.
+        </p>
+      </div>
+      <div class="goal">
+        <div class="icon"></div>
+        <h3>Financially stable</h3>
+        <p>To live without worrying about the prices of the items.</p>
+      </div>
+      <div class="goal">
+        <div class="icon"></div>
+        <h3>Comfortable and successful career</h3>
+        <p>To have a enjoyable career and doing what I love the most.</p>
+      </div>
+      <div class="goal">
+        <div class="icon"></div>
+        <h3>Granting her wish</h3>
+        <p>Someday, I want to grant all of my mothers' wish.</p>
+      </div>
+    </section>
+
+    <div class="team-comment">
+      <h2>Comments</h2>
+      <div class="teammate-comments">
+        <div class="team-comment-item">
+          <span class="team-comment-author">Alliyah Samantha</span>
+          <p class="team-comment-text">A.</p>
+        </div>
+        <div class="team-comment-item">
+          <span class="team-comment-author">John</span>
+          <p class="team-comment-text">k.</p>
+        </div>
+        <div class="team-comment-item">
+          <span class="team-comment-author">Marc</span>
+          <p class="team-comment-text">N.</p>
+        </div>
+        <div class="team-comment-item">
+          <span class="team-comment-author">Andrei</span>
+          <p class="team-comment-text">A.</p>
+        </div>
+        <div class="team-comment-item">
+          <span class="team-comment-author">Angelica</span>
+          <p class="team-comment-text">H.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="comment-section">
+      <div class="comment-container">
+        <form class="comments">
+          <div class="comment-group">
+            <input type="text" placeholder="Enter your name" required />
+          </div>
+          <div class="comment-group">
+            <textarea
+              id="userComment"
+              name="comment"
+              placeholder="Enter your comment"
+              required
+              oninput="checkComment()"
+            ></textarea>
+          </div>
+          <div class="comment-container">
+            <button type="submit" id="comment_Button" disabled>Comment</button>
+          </div>
+        </form>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
