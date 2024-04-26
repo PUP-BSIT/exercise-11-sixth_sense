@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link href="style.css" rel="stylesheet" />
+    <script src="script.js"></script>
     <title>Escuro_JohnDeniel Page</title>
   </head>
   <body>
@@ -113,7 +114,8 @@
             <input
               type="text"
               name="subject"
-              placeholder="Enter your Subject"/>
+              placeholder="Enter your Subject"
+            />
           </div>
         </div>
 
@@ -124,7 +126,8 @@
               name="message"
               rows="7"
               cols="30"
-              placeholder="Enter your Message"></textarea>
+              placeholder="Enter your Message"
+            ></textarea>
           </div>
         </div>
 
@@ -149,7 +152,8 @@
             id="name"
             name="name"
             required
-            placeholder="Enter your Name"/>
+            placeholder="Enter your Name"
+          />
         </div>
         <div>
           <label for="comment">Comment</label>
@@ -157,7 +161,10 @@
             id="comment"
             name="comment"
             required
-            placeholder="Enter your Comment"></textarea>
+            placeholder="Enter your Comment"
+            required
+            oninput="validateInput()"
+          ></textarea>
         </div>
         <button type="submit" id="submit-btn" disabled>Comment</button>
       </form>
@@ -168,7 +175,10 @@
       <div class="comment">
         <ol>
           <li>- Gasta</li>
-          <li>- Trinidad:</li>
+          <li>
+            - Trinidad: Hoping from the stars above that someday you will
+            achieve all of it, Bro
+          </li>
           <li>- Rosario:</li>
           <li>- Armedilla: I believe in you, keep it up!</li>
           <li>- Ilagan:</li>

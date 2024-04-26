@@ -27,6 +27,7 @@ h2 {
   padding: 20px;
   margin-left: 10px;
   text-align: center;
+  font-family: Georgia, sans-serif;
 }
 
 ul,
@@ -50,6 +51,14 @@ a {
 .interests p {
   color: white;
 }
+
+.goal {
+  text-align: center;
+  background-color: rgb(241, 180, 65);
+  border: 5px solid rgb(247, 246, 246);
+  margin-bottom: 20px;
+}
+
 
 li {
   color: white;
@@ -79,6 +88,34 @@ li {
   color: white;
 }
 
+.section {
+  background-color: rgb(241, 180, 65);
+  border: 5px solid rgb(247, 246, 246);
+  padding: 20px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.section p{
+  font-style: italic;
+  color: white;
+}
+
+.para {
+  text-align: center;
+  background-color: rgb(241, 180, 65);
+  border: 5px solid rgb(247, 246, 246);
+  margin-bottom: 20px;
+}
+
+.para p {
+  font-style: bold;
+  font-size: large;
+  color: white;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
 .gallery {
   background-color: rgb(241, 180, 65);
   border: 5px solid rgb(247, 246, 246);
@@ -97,24 +134,20 @@ li {
   grid-gap: 20px;
 }
 
-/* Span the message textarea across both columns */
 .message-container {
   grid-column: span 2;
 }
 
-/* Center align the form */
 .contact {
   text-align: center;
 }
 
-/* Center the form horizontally */
 .contact form {
   margin: 0 auto;
   max-width: 600px;
   padding: 20px;
 }
 
-/* Apply consistent styling to form inputs and labels */
 label {
   font-weight: bold;
   display: block;
@@ -136,16 +169,15 @@ textarea {
 
 .checkbox-container {
   display: flex;
-  justify-content: center; /* Center items horizontally */
-  align-items: center; /* Center items vertically */
-  margin-bottom: 20px; /* Increased bottom margin */
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
 }
 
 .checkbox-container input[type="checkbox"] {
-  margin-right: 10px; /* Add some right margin for spacing */
+  margin-right: 10px;
 }
 
-/* Add hover effect to submit button */
 input[type="submit"] {
   background-color: rgb(241, 180, 65);
   color: #fff;
