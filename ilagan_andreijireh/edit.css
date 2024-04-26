@@ -98,6 +98,9 @@ li {
 .para p {
   font-style: bold;
   color: white;
+  text-align: center;
+  border: 5px solid rgb(247, 246, 246);
+  margin-bottom: 20px;
 }
 
 .gallery {
