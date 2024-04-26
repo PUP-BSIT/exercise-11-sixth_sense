@@ -87,6 +87,13 @@ li {
   color: white;
 }
 
+.para {
+  text-align: center;
+  background-color: rgb(241, 180, 65);
+  border: 5px solid rgb(247, 246, 246);
+  margin-bottom: 20px;
+}
+
 .gallery {
   background-color: rgb(241, 180, 65);
   border: 5px solid rgb(247, 246, 246);
