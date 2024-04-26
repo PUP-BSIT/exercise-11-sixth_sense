@@ -124,5 +124,34 @@
         </div>
       </form>
     </div>
+
+    <div class="comment-form">
+      <h2>Leave a Comment</h2>
+      <form>
+        <div class="">
+          <label for="name">Name</label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            required
+            placeholder="Enter your Name"
+          />
+        </div>
+        <div>
+          <label for="comment">Comment</label>
+          <textarea
+            id="comment"
+            name="comment"
+            required
+            placeholder="Enter your Comment"
+            required
+            oninput="validateInput()"
+          ></textarea>
+        </div>
+        <button type="submit" id="submit-btn" disabled>Comment</button>
+      </form>
+    </div>
+    
   </body>
 </html>
