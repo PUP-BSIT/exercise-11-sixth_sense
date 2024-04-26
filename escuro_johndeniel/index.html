@@ -75,9 +75,26 @@
       </div>
     </div>
 
+    <div>
+      <div class="classes-text">
+        <h2>Face-To-Face Classes</h2>
+      </div>
+      <div class="classes-list">
+        <ol>
+          <li>
+            It's a much better way to learn because the teacher is always there
+            to help you.
+          </li>
+          <li>Also the class is much more interactive and engaging.</li>
+        </ol>
+      </div>
+    </div>
+
     <div class="form-container">
       <form class="container">
-        <h2>Contact Me</h2>
+        <div class="contact-text">
+          <h2>Contact Me</h2>
+        </div>
         <div class="upper">
           <div>
             <label for="email">Email</label>
@@ -96,19 +113,19 @@
             <input
               type="text"
               name="subject"
-              placeholder="Enter your Subject"
-            />
+              placeholder="Enter your Subject"/>
           </div>
         </div>
 
         <div class="message-container">
           <label for="message">Message</label>
-          <textarea
-            name="message"
-            cols="30"
-            rows="15"
-            placeholder="Enter your Message"
-          ></textarea>
+          <div class="message-area">
+            <textarea
+              name="message"
+              rows="7"
+              cols="30"
+              placeholder="Enter your Message"></textarea>
+          </div>
         </div>
 
         <div class="checkbox-container">
@@ -123,17 +140,16 @@
     </div>
 
     <div class="comment-form">
-      <h3>Leave a Comment</h3>
+      <h2>Leave a Comment</h2>
       <form>
-        <div>
+        <div class="">
           <label for="name">Name</label>
           <input
             type="text"
             id="name"
             name="name"
             required
-            placeholder="Enter your Name"
-          />
+            placeholder="Enter your Name"/>
         </div>
         <div>
           <label for="comment">Comment</label>
@@ -141,11 +157,23 @@
             id="comment"
             name="comment"
             required
-            placeholder="Enter your Comment"
-          ></textarea>
+            placeholder="Enter your Comment"></textarea>
         </div>
         <button type="submit" id="submit-btn" disabled>Comment</button>
       </form>
+    </div>
+
+    <div>
+      <h2 class="comment-text">Comments</h2>
+      <div class="comment">
+        <ol>
+          <li>- Gasta</li>
+          <li>- Trinidad:</li>
+          <li>- Rosario:</li>
+          <li>- Armedilla:</li>
+          <li>- Ilagan:</li>
+        </ol>
+      </div>
     </div>
   </body>
 </html>
