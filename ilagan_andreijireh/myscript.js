@@ -1,11 +1,16 @@
-function validateInput() {
-  let inputField = document.getElementById("comment");
-  let nameField = document.getElementById("name");
-  let submitBtn = document.getElementById("submit-btn");
+document.addEventListener("DOMContentLoaded", function() {
+  const nameInput = document.getElementById("name");
+  const commentInput = document.getElementById("comment");
+  const submitBtn = document.getElementById("submit-btn");
 
-  if (inputField.value.trim().length > 0 && nameField.value.trim().length > 0) {
-    submitBtn.disabled = false;
-  } else {
-    submitBtn.disabled = true;
+  function validateInput() {
+    if (nameInput.value.trim() !== "" && commentInput.value.trim() !== "") {
+      submitBtn.disabled = false;
+    } else {
+      submitBtn.disabled = true;
+    }
   }
-}
+
+  nameInput.addEventListener("input", validateInput);
+  commentInput.addEventListener("input", validateInput);
+});
