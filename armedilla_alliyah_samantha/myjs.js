@@ -1,8 +1,10 @@
 function validateInput() {
-  let inputField = document.getElementById("comment", "name");
+  let nameInput = document.getElementById("name");
+  let commentInput = document.getElementById("comment");
   let submitBtn = document.getElementById("submit_button");
 
-  if (inputField.value.trim().length > 0) {
+  if (nameInput.value.trim().length > 0 && 
+    commentInput.value.trim().length > 0) {
     submitBtn.disabled = false;
   } else {
     submitBtn.disabled = true;

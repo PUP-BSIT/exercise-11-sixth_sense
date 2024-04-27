@@ -262,6 +262,10 @@ p {
   padding: 2rem;
 }
 
+.comment-section > h2 {
+  width: 100%;
+}
+
 .comment-group {
   display: flex;
   flex-direction: column;
