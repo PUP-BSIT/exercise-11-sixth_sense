@@ -33,7 +33,7 @@ h2 {
   margin: 5rem;
 }
 
-.sec1 {
+.sec-1 {
   flex: 1;
   margin: 5px;
   background-color: #f8c4b4;
@@ -43,7 +43,7 @@ h2 {
   box-shadow: 4px 5px 15px #e78895;
 }
 
-.sec2 {
+.sec-2 {
   flex: 1;
   margin: 5px;
   background-color: #f3d0d7;
