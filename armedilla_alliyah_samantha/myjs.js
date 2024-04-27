@@ -4,9 +4,7 @@ function validateInput() {
 
   if (inputField.value.trim().length > 0) {
     submitBtn.disabled = false;
-    submitBtn.style.color = "dark blue";
   } else {
     submitBtn.disabled = true;
-    submitBtn.style.color = "";
   }
 }
