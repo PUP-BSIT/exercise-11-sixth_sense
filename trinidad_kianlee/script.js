@@ -5,9 +5,7 @@ function checkComment() {
 
   if (userName.value.length > 0 && userComment.value.length > 0) {
     commentButton.disabled = false;
-    commentButton.style.color = "blue";
   } else {
     commentButton.disabled = true;
-    commentButton.style.color = "";
   }
 }
