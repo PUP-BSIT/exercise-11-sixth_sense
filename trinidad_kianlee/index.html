@@ -179,22 +179,23 @@
     </div>
 
     <div class="comment-section">
+      <h2>Add a comment</h2>
       <div class="comment-container">
         <form class="comments">
           <div class="comment-group">
+            <label>Name</label>
             <input
               type="text"
               id="user_name"
-              placeholder="Enter your name"
               required
               oninput="checkComment()"
             />
           </div>
           <div class="comment-group">
+            <label>Comment</label>
             <textarea
               id="user_comment"
               name="comment"
-              placeholder="Enter your comment"
               required
               oninput="checkComment()"
             ></textarea>
