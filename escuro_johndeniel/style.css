@@ -230,7 +230,7 @@ textarea:focus {
 .comment-form button {
   padding: 10px 20px;
   background-color: #86aab7;
-  color: white;
+  color: gray;
   border: none;
   border-radius: 5px;
   cursor: pointer;
@@ -299,4 +299,20 @@ textarea:focus {
     padding: 10px;
     border-radius: 20x;
   }
+}
+
+.submit-btn {
+  padding: 10px 20px;
+  background-color: #ccc;
+  color: gray;
+  border: none;
+  border-radius: 5px;
+  cursor: not-allowed;
+  margin-bottom: 50px;
+}
+
+.submit-btn:enabled {
+  background-color: #86aab7;
+  color: white;
+  cursor: pointer;
 }
