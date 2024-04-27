@@ -3,7 +3,8 @@ function validateInput() {
   let commentInput = document.getElementById("comment");
   let submitBtn = document.getElementById("submit_button");
 
-  if (nameInput.value.trim().length > 0 && commentInput.value.trim().length > 0) {
+  if (nameInput.value.trim().length > 0 && 
+    commentInput.value.trim().length > 0) {
     submitBtn.disabled = false;
   } else {
     submitBtn.disabled = true;
