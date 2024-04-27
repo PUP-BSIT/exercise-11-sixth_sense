@@ -6,11 +6,11 @@
 
 body {
   font-family: Arial, sans-serif;
-  background-color: #AFD198;
+  background-color: #afd198;
 }
 
 .header {
-  background-color: #FF8787;
+  background-color: #ff8787;
   color: black;
   text-align: center;
   padding: 40px 0;
@@ -20,7 +20,7 @@ body {
 h2 {
   text-align: center;
   font-weight: bold;
-  color:black;
+  color: black;
   font-family: Arial, sans-serif;
   padding: 20px;
   border-radius: 10px;
@@ -36,22 +36,21 @@ h2 {
 .sec1 {
   flex: 1;
   margin: 5px;
-  background-color: #F8C4B4;
+  background-color: #f8c4b4;
   border-radius: 10px;
   text-align: center;
   padding: 5px;
-  box-shadow: 4px 5px 15px #E78895;
+  box-shadow: 4px 5px 15px #e78895;
 }
 
 .sec2 {
-    flex: 1;
-    margin: 5px;
-    background-color: #F3D0D7;
-    border-radius: 10px;
-    text-align: center;
-    padding: 5px;
-    box-shadow: 4px 5px 15px #EE99C2;
-
+  flex: 1;
+  margin: 5px;
+  background-color: #f3d0d7;
+  border-radius: 10px;
+  text-align: center;
+  padding: 5px;
+  box-shadow: 4px 5px 15px #ee99c2;
 }
 
 ul,
@@ -62,7 +61,7 @@ li {
 }
 
 .gallery {
-  background-color: #FBF3D5;
+  background-color: #fbf3d5;
   padding: 20px;
   border-radius: 10px;
   margin-top: 10px;
@@ -163,18 +162,16 @@ textarea:focus {
 }
 
 .submit-container input[type="submit"] {
-    padding: 12px 24px;
-    background-color: #E5EBB2;
-    color: black;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
+  padding: 12px 24px;
+  background-color: #e5ebb2;
+  color: black;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
 .submit-container input[type="submit"]:hover {
   background-color: #ff5e40;
 }
 
-@media screen and (min-width: 768px) {
-}  

@@ -1,12 +1,11 @@
 function checkComment() {
-  let userComment = document.getElementById("userComment");
-  let commentButton = document.getElementById("comment_Button");
+  let userName = document.getElementById("user_name");
+  let userComment = document.getElementById("user_comment");
+  let commentButton = document.getElementById("comment_button");
 
-  if (userComment.value.trim().length > 0) {
+  if (userName.value.length > 0 && userComment.value.length > 0) {
     commentButton.disabled = false;
-    commentButton.style.color = "blue";
   } else {
     commentButton.disabled = true;
-    commentButton.style.color = "";
   }
 }
