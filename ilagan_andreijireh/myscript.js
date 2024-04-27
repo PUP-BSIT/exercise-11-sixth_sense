@@ -10,4 +10,3 @@ function validateInput() {
     submitBtn.style.color = "";
   }
 }
-  
