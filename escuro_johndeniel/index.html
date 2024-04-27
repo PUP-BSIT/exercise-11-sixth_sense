@@ -153,6 +153,7 @@
             name="name"
             required
             placeholder="Enter your Name"
+            oninput="validateInput()"
           />
         </div>
         <div>
@@ -166,7 +167,9 @@
             oninput="validateInput()"
           ></textarea>
         </div>
-        <button type="submit" id="submit-btn" disabled>Comment</button>
+        <button type="submit" id="submit-btn" class="submit-btn" disabled>
+          Comment
+        </button>
       </form>
     </div>
 
