@@ -350,3 +350,17 @@ textarea {
     flex-direction: column;
   }
 }
+
+@media (max-width: 600px) {
+  .goals {
+    padding: 10px;
+  }
+
+  .goal {
+    max-width: 100%;
+  }
+
+  .teammate-comments {
+    max-width: calc(100% - 40px);
+  }
+}
