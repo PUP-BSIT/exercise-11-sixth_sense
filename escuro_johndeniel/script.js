@@ -1,6 +1,6 @@
 function validateInput() {
   let inputField = document.getElementById("comment");
-  let submitBtn = document.getElementById("submit_btn");
+  let submitBtn = document.getElementById("submit-btn");
 
   if (inputField.value.trim().length > 0) {
     submitBtn.disabled = false;
